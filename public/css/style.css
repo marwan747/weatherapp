@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: rgb(219, 219, 219);
+  background: radial-gradient(
+    circle,
+    rgba(219, 219, 219, 1) 30%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(213, 220, 221, 0.8407738095238095) 100%
+  );
+}
+
+.form-weather {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-weather .checkbox {
+  font-weight: 400;
+}
+.form-weather .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-weather .form-control:focus {
+  z-index: 2;
+}
+.form-weather input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-weather input[type="text"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

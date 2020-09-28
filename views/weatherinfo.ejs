@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style2.css" />
+    <title>Weather info</title>
+  </head>
+  <body>
+    <div class="center">
+      <div class="side">
+        <div class="date col-lg-12">Today is <%=date%></div>
+        <div class="description col-lg-12"><%=description%></div>
+        <div class="humidity col-lg-12">The humidity <%=humidity%></div>
+        <div class="wind col-lg-12">Wind speed <%=speed%></div>
+      </div>
+      <h1><%=temp%> <bold>C</bold></h1>
+      <img
+        class="imgg"
+        src="http://openweathermap.org/img/wn/<%=icon%>@2x.png"
+      />
+    </div>
+  </body>
+</html>
