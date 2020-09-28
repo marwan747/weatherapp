@@ -19,7 +19,7 @@ app.post("/weatherinfo", (req, res) => {
       params: {
         q: req.body.city,
         units: req.body.units,
-        appid: "537c46a01124652fb238832318172b60",
+        appid: PROCESS.ENV.APP_ID,
       },
     })
     .then((response) => {
