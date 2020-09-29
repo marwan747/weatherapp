@@ -37,10 +37,9 @@ h1 {
 }
 .side div {
   color: white;
-  height: 10%;
-  margin-top: 20%;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  height: 25%;
+  padding-top: 19%;
+  padding-bottom: 0%;
   text-align: center;
 }
 .imgg {
@@ -62,10 +61,8 @@ h2 {
 @media (max-width: 800px) {
   .side div {
     color: white;
-    height: 15%;
-    margin-top: 30%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    height: 25%;
+    padding-top: 19%;
     text-align: center;
   }
 }
