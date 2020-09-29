@@ -28,8 +28,10 @@ app.post("/weatherinfo", (req, res) => {
         description: response.data.weather[0].description,
         humidity: response.data.main.humidity,
         speed: response.data.wind.speed,
-        temp: response.data.main.temp,
+        temp: Math.round(response.data.main.temp),
         icon: response.data.weather[0].icon,
+        country: response.data.sys.country,
+        city: response.data.name,
       });
     })
     .catch((error) => {

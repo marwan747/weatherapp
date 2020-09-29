@@ -15,18 +15,23 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style2.css" />
     <title>Weather info</title>
   </head>
   <body>
     <div class="center">
+      <h2 class="city"><%=city%>, <%=country%></h1>
       <div class="side">
-        <div class="date col-lg-12">Today is <%=date%></div>
+        <div class="date col-lg-12"><%=date%></div>
         <div class="description col-lg-12"><%=description%></div>
-        <div class="humidity col-lg-12">The humidity <%=humidity%></div>
+        <div class="humidity col-lg-12">The humidity <%=humidity%> %</div>
         <div class="wind col-lg-12">Wind speed <%=speed%></div>
       </div>
-      <h1><%=temp%> <bold>C</bold></h1>
+      <h1><%=temp%> <bold class="type">C</bold></h1>
       <img
         class="imgg"
         src="http://openweathermap.org/img/wn/<%=icon%>@2x.png"
